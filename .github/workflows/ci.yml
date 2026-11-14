@@ -28,7 +28,7 @@ jobs:
         run: uv run pytest
       - name: Static security analysis
         run: uv run bandit -q -r src
-      - name: Known vulnerabilities (PyTorch excluded: its CPU build is not on PyPI)
+      - name: "Known vulnerabilities (PyTorch is excluded because its CPU build is not on PyPI)"
         run: |
           uv export --no-hashes --no-emit-project --no-emit-package torch --no-emit-package torchvision -o requirements-audit.txt
           uvx pip-audit -r requirements-audit.txt
