@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this model or code, please cite it as below."
+title: "neural-demo: a small CNN for handwritten digits, trained in Python and run in the browser"
+type: software
+authors:
+  - family-names: "Medeiros"
+    given-names: "Victor Huggo"
+version: 0.1.0
+date-released: 2026-11-13
+license: AGPL-3.0-or-later
